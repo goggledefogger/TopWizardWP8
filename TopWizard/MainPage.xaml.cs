@@ -22,6 +22,11 @@ namespace TopWizard
             //BuildLocalizedApplicationBar();
         }
 
+        private void btnFacebookLogin_Click(object sender, RoutedEventArgs e)
+        {
+            NavigationService.Navigate(new Uri("/Pages/FacebookLoginPage.xaml", UriKind.Relative));
+        }
+
         // Sample code for building a localized ApplicationBar
         //private void BuildLocalizedApplicationBar()
         //{

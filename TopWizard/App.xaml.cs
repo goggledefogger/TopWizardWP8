@@ -7,6 +7,8 @@ using System.Windows.Navigation;
 using Microsoft.Phone.Controls;
 using Microsoft.Phone.Shell;
 using TopWizard.Resources;
+using TopWizard.ViewModel;
+using Facebook.Client;
 
 namespace TopWizard
 {
@@ -17,6 +19,11 @@ namespace TopWizard
         /// </summary>
         /// <returns>The root frame of the Phone Application.</returns>
         public static PhoneApplicationFrame RootFrame { get; private set; }
+
+        internal static string AccessToken = String.Empty;
+        internal static string FacebookId = String.Empty;
+        public static bool isAuthenticated = false;
+        public static FacebookSessionClient FacebookSessionClient = new FacebookSessionClient(Constants.FacebookAppId);
 
         /// <summary>
         /// Constructor for the Application object.
