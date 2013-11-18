@@ -100,6 +100,9 @@
     <Compile Include="Pages\FacebookLoginPage.xaml.cs">
       <DependentUpon>FacebookLoginPage.xaml</DependentUpon>
     </Compile>
+    <Compile Include="Pages\FriendSelector.xaml.cs">
+      <DependentUpon>FriendSelector.xaml</DependentUpon>
+    </Compile>
     <Compile Include="Pages\LandingPage.xaml.cs">
       <DependentUpon>LandingPage.xaml</DependentUpon>
     </Compile>
@@ -110,6 +113,7 @@
       <DependentUpon>AppResources.resx</DependentUpon>
     </Compile>
     <Compile Include="ViewModel\Constants.cs" />
+    <Compile Include="ViewModel\FacebookDataModel.cs" />
   </ItemGroup>
   <ItemGroup>
     <ApplicationDefinition Include="App.xaml">
@@ -121,6 +125,10 @@
       <Generator>MSBuild:Compile</Generator>
     </Page>
     <Page Include="Pages\FacebookLoginPage.xaml">
+      <SubType>Designer</SubType>
+      <Generator>MSBuild:Compile</Generator>
+    </Page>
+    <Page Include="Pages\FriendSelector.xaml">
       <SubType>Designer</SubType>
       <Generator>MSBuild:Compile</Generator>
     </Page>
@@ -156,6 +164,10 @@
     <Content Include="Assets\Tiles\IconicTileSmall.png">
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
+    <Content Include="Images\Cafe.png" />
+    <Content Include="Images\Person.png" />
+    <Content Include="Images\Places.png" />
+    <Content Include="Images\share.png" />
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Include="Resources\AppResources.resx">

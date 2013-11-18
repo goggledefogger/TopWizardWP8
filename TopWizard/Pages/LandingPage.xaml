@@ -26,6 +26,27 @@
             <TextBlock Text="page name" Margin="9,-7,0,0" Style="{StaticResource PhoneTextTitle1Style}"/>
         </StackPanel>
 
+        <Border Grid.Row="1" HorizontalAlignment="Center" CornerRadius="10" Background="#FF2A2F91" Margin="0,20,0,0">
+            <Grid Margin="5">
+                <Grid.RowDefinitions>
+                    <RowDefinition Height="97*"/>
+                    <RowDefinition Height="105*"/>
+                    <RowDefinition Height="92*"/>
+                </Grid.RowDefinitions>
+                <Grid x:Name="WithWhomGrid" Grid.Row="2" >
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="99*"/>
+                        <ColumnDefinition Width="361*"/>
+                    </Grid.ColumnDefinitions>
+                    <Image HorizontalAlignment="Right" Height="80" Margin="0,0,10,0" VerticalAlignment="Top" Width="100" Stretch="None" Source="/Images/Person.png" Grid.Column="0       "/>
+                    <StackPanel Grid.Column="1" Margin="15,0,0,0">
+                        <TextBlock HorizontalAlignment="Left" TextWrapping="Wrap" Text="With Whom?" VerticalAlignment="Top" FontSize="26.667"/>
+                        <TextBlock x:Name="WithWhoTextBox" HorizontalAlignment="Left" TextWrapping="Wrap" Text="Select Friends" VerticalAlignment="Top" Tap="friendSelectorTextBlockHandler" Foreground="#FF7CC8D4"/>
+                    </StackPanel>
+                </Grid>
+            </Grid>
+        </Border>
+
         <!--ContentPanel - place additional content here-->
         <Grid x:Name="ContentPanel" Grid.Row="1" Margin="12,0,12,0">
             <Grid.RowDefinitions>
