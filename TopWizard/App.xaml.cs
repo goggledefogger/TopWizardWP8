@@ -24,6 +24,7 @@ namespace TopWizard
         internal static string FacebookId = String.Empty;
         public static bool isAuthenticated = false;
         public static FacebookSessionClient FacebookSessionClient = new FacebookSessionClient(Constants.FacebookAppId);
+        public static Friend CurrentFriend = null;
 
         /// <summary>
         /// Constructor for the Application object.

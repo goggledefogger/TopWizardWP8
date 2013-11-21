@@ -16,9 +16,16 @@ namespace TopWizard.ViewModel
         public Uri PictureUri { get; set; }
     }
 
+    public class Photo
+    {
+        public Uri PictureUri { get; set; }
+    }
+
     public class FacebookData
     {
         private static ObservableCollection<Friend> friends = new ObservableCollection<Friend>();
+        private static ObservableCollection<Photo> winPhotos = new ObservableCollection<Photo>();
+        private static ObservableCollection<Photo> losePhotos = new ObservableCollection<Photo>();
 
         public static ObservableCollection<Friend> Friends
         {
@@ -35,6 +42,42 @@ namespace TopWizard.ViewModel
             get
             {
                 return selectedFriends;
+            }
+        }
+
+        private static ObservableCollection<Photo> selectedWinPhotos = new ObservableCollection<Photo>();
+
+        public static ObservableCollection<Photo> SelectedWinPhotos
+        {
+            get
+            {
+                return selectedWinPhotos;
+            }
+        }
+
+        private static ObservableCollection<Photo> selectedLosePhotos = new ObservableCollection<Photo>();
+
+        public static ObservableCollection<Photo> SelectedLosePhotos
+        {
+            get
+            {
+                return selectedLosePhotos;
+            }
+        }
+
+        public static ObservableCollection<Photo> WinPhotos
+        {
+            get
+            {
+                return winPhotos;
+            }
+        }
+
+        public static ObservableCollection<Photo> LosePhotos
+        {
+            get
+            {
+                return losePhotos;
             }
         }
     }

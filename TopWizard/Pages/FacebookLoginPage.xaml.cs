@@ -36,7 +36,7 @@ namespace TopWizard.Pages
             string message = String.Empty;
             try
             {
-                session = await App.FacebookSessionClient.LoginAsync("user_about_me,read_stream");
+                session = await App.FacebookSessionClient.LoginAsync("user_about_me,read_stream,user_photos,friends_photos");
                 App.AccessToken = session.AccessToken;
                 App.FacebookId = session.FacebookId;
 
