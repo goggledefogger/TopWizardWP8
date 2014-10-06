@@ -1,6 +1,6 @@
 # README #
 
-TopWizardWP8
+Top Wizard, or "The True Magic Crusher" - C# application for Windows Phone 8
 
 
 ### What is this repository for? ###
